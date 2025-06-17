@@ -1,0 +1,12 @@
+<div
+  class="label-counter"
+  [style.background-color]="backgroundColor"
+  [style.color]="textColor"
+>
+  <ng-content></ng-content>
+  <span
+    class="label-counter-circle"
+    [style.background-color]="numberBackgroundColor"
+    >{{ number }}
+  </span>
+</div>

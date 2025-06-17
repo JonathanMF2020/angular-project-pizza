@@ -1,0 +1,42 @@
+<app-label-counter
+  [backgroundColor]="'#f1f4f3'"
+  [textColor]="'black'"
+  [numberBackgroundColor]="'yellow'"
+  [number]="5"
+>
+  Dine in</app-label-counter
+>
+
+<app-label-counter
+  [backgroundColor]="'green'"
+  [textColor]="'white'"
+  [numberBackgroundColor]="'red'"
+  [number]="5"
+>
+  Orders</app-label-counter
+>
+
+<app-category
+  [backgroundColor]="'red'"
+  [image]="'/assets/image/mexicana.png'"
+  [label]="'Pizza'"
+  [stock]="'12 items'"
+  [color]="'white'"
+>
+</app-category>
+
+<div class="display-flex">
+  <app-item
+    [description]="'Mexican Pizza'"
+    [title]="'Mexicana'"
+    [image]="'/assets/image/mexicana.png'"
+    [backgroundColor]="'#f0f5f3'"
+    [color]="'black'"
+  >
+  </app-item>
+</div>
+
+<div class="display-flex">
+  <app-icon [backgroundColor]="'#f0f5f3'" [color]="'black'">add</app-icon>
+  <app-icon [backgroundColor]="'#f0f5f3'" [color]="'black'">remove</app-icon>
+</div>

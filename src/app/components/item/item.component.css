@@ -1,0 +1,49 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border-radius: 12px;
+  padding: 16px;
+  font-family: "Gilroy", sans-serif;
+}
+
+.image-food {
+  max-width: 100%;
+  height: 200px;
+  width: auto;
+  flex-grow: 1;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-add {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* Fondo blanco */
+  color: black; /* Ícono o texto en verde */
+  transition: background-color 0.3s ease, transform 0.1s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ligera sombra */
+}
+
+.button-add:hover {
+  background-color: #f0f0f0; /* Gris claro en hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.button-add:active {
+  transform: scale(0.95);
+  background-color: #e0e0e0; /* Gris más marcado al presionar */
+}

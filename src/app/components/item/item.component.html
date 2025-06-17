@@ -1,0 +1,13 @@
+<div
+  class="item"
+  [style.background-color]="backgroundColor"
+  [style.color]="color"
+>
+  <div class="header">{{ title }}</div>
+  <div class="description">{{ description }}</div>
+
+  <img [src]="image" alt="Item image" class="image-food" />
+  <div class="footer">
+    <app-icon [backgroundColor]="'white'" [color]="'black'">add</app-icon>
+  </div>
+</div>
