@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Margherita",
+      "description": "Classic pizza with tomato sauce, mozzarella cheese, and fresh basil.",
+      "price": 8.99,
+      "imageUrl": "https://example.com/images/margherita.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Pepperoni",
+      "description": "Spicy pepperoni slices on a bed of mozzarella cheese and tomato sauce.",
+      "price": 9.99,
+      "imageUrl": "https://example.com/images/pepperoni.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Vegetarian",
+      "description": "A delightful mix of seasonal vegetables on a cheesy base.",
+      "price": 10.49,
+      "imageUrl": "https://example.com/images/vegetarian.jpg"
+    }
+  ]
+}
