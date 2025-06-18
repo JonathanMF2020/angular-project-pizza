@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { LabelCounterComponent } from './components/label-counter/label-counter.component';
 
 @Component({
   selector: 'app-root',

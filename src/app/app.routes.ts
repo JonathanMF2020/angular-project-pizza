@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { DesignComponent } from './pages/design/design.component';
+import { PizzasComponent } from './features/pizzas/pizzas.component';
+import { DesignComponent } from './features/design/design.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent }, // ruta raíz
+  { path: '', component: PizzasComponent }, // ruta raíz
   { path: 'design', component: DesignComponent }, // ruta /about
 ];

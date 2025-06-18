@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
-import { MockServerService } from '../../services/mock-server.service';
 import { Pizza } from '../../models/pizza.model';
+import { MockServerService } from '../../core/services/mock-server.service';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-pizzas',
   standalone: true,
   imports: [],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  templateUrl: './pizzas.component.html',
+  styleUrl: './pizzas.component.css',
 })
-export class HomeComponent {
+export class PizzasComponent {
   pizzas: Pizza[] = [];
 
   constructor(private mockServerService: MockServerService) {}

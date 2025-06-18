@@ -9,7 +9,7 @@ import {
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { appHttpInterceptor } from './interceptor/app-http-inspector.service';
+import { appHttpInterceptor } from './core/interceptor/app-http-inspector.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
