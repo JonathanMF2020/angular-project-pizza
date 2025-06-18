@@ -1,6 +1,11 @@
 import { ApplicationConfig, inject } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptors } from '@angular/common/http';
+import {
+  HTTP_INTERCEPTORS,
+  provideHttpClient,
+  withFetch,
+  withInterceptors,
+} from '@angular/common/http';
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
@@ -11,6 +16,10 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideClientHydration(),
     provideAnimationsAsync(),
-    provideHttpClient(withInterceptors([appHttpInterceptor])),
+    provideHttpClient(withFetch()),
+    provideHttpClient(
+      withFetch(), // Habilita Fetch API
+      withInterceptors([appHttpInterceptor]) // Añade interceptores
+    ),
   ],
 };
