@@ -4,10 +4,10 @@ import { IconComponent } from '../icon/icon.component';
 
 @Component({
   selector: 'app-item',
-  standalone: true,
   imports: [MatIconModule, IconComponent],
   templateUrl: './item.component.html',
   styleUrl: './item.component.css',
+  standalone: true,
 })
 export class ItemComponent {
   @Input()

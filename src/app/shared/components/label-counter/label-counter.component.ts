@@ -2,8 +2,8 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-label-counter',
-  standalone: true,
   imports: [],
+  standalone: true,
   templateUrl: './label-counter.component.html',
   styleUrl: './label-counter.component.css',
 })
