@@ -1,10 +1,4 @@
-import {
-  HttpRequest,
-  HttpHandlerFn,
-  HttpEvent,
-  HttpResponse,
-  HttpErrorResponse,
-} from '@angular/common/http';
+import { HttpRequest, HttpHandlerFn, HttpEvent, HttpResponse, HttpErrorResponse } from '@angular/common/http';
 import { Observable, of, throwError } from 'rxjs';
 import { delay, mergeMap } from 'rxjs/operators';
 import { urls } from './interceptor';
