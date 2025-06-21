@@ -8,10 +8,9 @@ describe('LabelCounterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LabelCounterComponent]
-    })
-    .compileComponents();
-    
+      imports: [LabelCounterComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(LabelCounterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
