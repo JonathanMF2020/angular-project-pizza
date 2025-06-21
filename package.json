@@ -10,7 +10,8 @@
     "serve:ssr:app": "node dist/app/server/server.mjs",
     "lint": "eslint \"src/**/*.{ts,html}\"",
     "lint:fix": "eslint \"src/**/*.{ts,html}\" --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "prettier": "prettier"
   },
   "lint-staged": {
     "*.{ts,html}": [
