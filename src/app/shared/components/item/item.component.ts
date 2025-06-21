@@ -11,17 +11,17 @@ import { IconComponent } from '../icon/icon.component';
 })
 export class ItemComponent {
   @Input()
-  title: string = '';
+  title = '';
 
   @Input()
-  description: string = '';
+  description = '';
 
   @Input()
-  image: string = '';
+  image = '';
 
   @Input()
-  backgroundColor: string = 'grey';
+  backgroundColor = 'grey';
 
   @Input()
-  color: string = 'black';
+  color = 'black';
 }

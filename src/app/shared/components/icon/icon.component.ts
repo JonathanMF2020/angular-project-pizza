@@ -9,8 +9,8 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class IconComponent {
   @Input()
-  backgroundColor: string = 'grey';
+  backgroundColor = 'grey';
 
   @Input()
-  color: string = 'black';
+  color = 'black';
 }

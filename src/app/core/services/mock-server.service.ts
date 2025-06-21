@@ -1,14 +1,15 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Pizza } from '../../models/pizza.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class MockServerService {
-  constructor(private http: HttpClient) {}
+  private http = inject(HttpClient);
 
-  getPizzas(): Observable<any> {
-    return this.http.get('/pizzas/');
+  getPizzas(): Observable<{ data: Pizza[] }> {
+    return this.http.get<{ data: Pizza[] }>('/pizzas/');
   }
 }

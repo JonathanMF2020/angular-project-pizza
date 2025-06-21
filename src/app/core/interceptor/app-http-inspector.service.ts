@@ -1,12 +1,18 @@
-import { HttpRequest, HttpHandlerFn, HttpEvent, HttpResponse, HttpErrorResponse } from '@angular/common/http';
+import {
+  HttpRequest,
+  HttpHandlerFn,
+  HttpEvent,
+  HttpResponse,
+  HttpErrorResponse,
+} from '@angular/common/http';
 import { Observable, of, throwError } from 'rxjs';
 import { delay, mergeMap } from 'rxjs/operators';
 import { urls } from './interceptor';
 
 export const appHttpInterceptor = (
-  request: HttpRequest<any>,
-  next: HttpHandlerFn
-): Observable<HttpEvent<any>> => {
+  request: HttpRequest<unknown>,
+  next: HttpHandlerFn,
+): Observable<HttpEvent<unknown>> => {
   const { url, method } = request;
 
   for (const mock of urls) {
@@ -28,7 +34,7 @@ export const appHttpInterceptor = (
                   statusText: 'Simulated Error',
                   url,
                   error: mock.json,
-                })
+                }),
             );
           }
 
@@ -37,9 +43,9 @@ export const appHttpInterceptor = (
               status: mock.status || 200,
               body: mock.json,
               url,
-            })
+            }),
           );
-        })
+        }),
       );
     }
   }

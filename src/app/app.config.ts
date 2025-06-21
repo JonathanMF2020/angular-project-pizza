@@ -1,7 +1,6 @@
-import { ApplicationConfig, inject } from '@angular/core';
+import { ApplicationConfig } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import {
-  HTTP_INTERCEPTORS,
   provideHttpClient,
   withFetch,
   withInterceptors,
@@ -19,7 +18,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(withFetch()),
     provideHttpClient(
       withFetch(), // Habilita Fetch API
-      withInterceptors([appHttpInterceptor]) // Añade interceptores
+      withInterceptors([appHttpInterceptor]), // Añade interceptores
     ),
   ],
 };

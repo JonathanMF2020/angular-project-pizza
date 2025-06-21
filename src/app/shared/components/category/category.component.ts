@@ -9,17 +9,17 @@ import { Component, Input } from '@angular/core';
 })
 export class CategoryComponent {
   @Input()
-  backgroundColor: string = 'black';
+  backgroundColor = 'black';
 
   @Input()
-  label: string = '';
+  label = '';
 
   @Input()
-  stock: string = '';
+  stock = '';
 
   @Input()
-  color: string = 'white';
+  color = 'white';
 
   @Input()
-  image: string = 'https://via.placeholder.com/150';
+  image = 'https://via.placeholder.com/150';
 }

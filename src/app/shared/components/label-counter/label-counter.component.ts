@@ -9,14 +9,14 @@ import { Component, Input } from '@angular/core';
 })
 export class LabelCounterComponent {
   @Input()
-  backgroundColor: string = 'black';
+  backgroundColor = 'black';
 
   @Input()
-  textColor: string = 'white';
+  textColor = 'white';
 
   @Input()
-  number: number = 10;
+  number = 10;
 
   @Input()
-  numberBackgroundColor: string = 'black';
+  numberBackgroundColor = 'black';
 }
